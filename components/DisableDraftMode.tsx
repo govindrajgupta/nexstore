@@ -4,10 +4,10 @@ import { useDraftModeEnvironment } from "next-sanity/hooks";
 import { useRouter } from "next/navigation";
 
 export function DisableDraftMode(){
-    const enviroment = useDraftModeEnvironment();
+    const environment = useDraftModeEnvironment();
     const router = useRouter();
 
-    if(enviroment !== "live" && enviroment !== "unknown"){
+    if(environment !== "live" && environment !== "unknown"){
         return null;
     }
     const handleClick = async () => {

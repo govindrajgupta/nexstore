@@ -1,10 +1,12 @@
 import AddToBasketButton from "@/components/AddToBasketButton";
-import { Button } from "@/components/ui/button";
 import { imageUrl } from "@/lib/imageUrl";
 import { getProductBySlug } from "@/sanity/lib/products/getProductBySlug";
 import { PortableText } from "next-sanity";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+
+export const dynamic = 'force-static';
+export const revalidate = 60; //revalidate every 60 seconds
 
 async function ProductPage ({ 
     params 
