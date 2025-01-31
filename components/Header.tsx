@@ -22,7 +22,7 @@ const Header = () => {
         }
        
     };
-  return <header className='flex flex-wrap justify-between items-center px-4 py-2'>
+  return <header className='flex flex-wrap justify-between items-center px-4 py-2 bg-violet-200'>
     {/* top row */}
     <div className='flex w-full flex-wrap justify-between items-center'>
         <Link href='/'
